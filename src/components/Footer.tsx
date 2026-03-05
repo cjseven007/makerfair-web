@@ -23,7 +23,7 @@ export default function Footer({
             <img
               src={logo}
               alt="PETROBOTS"
-              className="h-20 object-contain bg-white/5 p-2 rounded-xl"
+              className="h-20 object-contain bg-white p-2 rounded-xl"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).style.display = "none";
               }}
@@ -46,7 +46,7 @@ export default function Footer({
               <h3 className="text-[#D4AF37] font-bold tracking-widest uppercase text-sm mb-3 text-center md:text-left">
                 Connect With Us
               </h3>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center md:justify-start justify-center gap-4">
                 {socials.map((s) => (
                   <button
                     key={s.url}
@@ -54,7 +54,7 @@ export default function Footer({
                     className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#D4AF37] hover:scale-110 transition-all duration-300"
                     title={s.url}
                   >
-                    <img src={s.icon} alt="" className="h-5 w-5 object-contain brightness-0 invert" />
+                    <img src={s.icon} alt="" className="h-5 w-5 object-contain" />
                   </button>
                 ))}
               </div>

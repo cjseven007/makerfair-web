@@ -49,7 +49,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         <span className="font-bold text-[#001F3F] text-lg">{q}</span>
         <span className="text-2xl text-gray-400 font-light">{open ? "−" : "+"}</span>
       </button>
-      {open && <div className="px-6 pb-6 text-gray-600 font-light leading-relaxed">{a}</div>}
+      {open && <div className="px-6 pb-6  font-light leading-relaxed">{a}</div>}
     </div>
   );
 }
@@ -64,7 +64,7 @@ export default function CompetitionPage() {
           <h1 className="text-[#001F3F] font-extrabold text-4xl sm:text-5xl tracking-tight">
             {COMPETITION.title}
           </h1>
-          <p className="mt-4 text-gray-600 text-lg sm:text-xl font-light max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-4  text-lg sm:text-xl font-light max-w-3xl mx-auto leading-relaxed">
             {COMPETITION.intro}
           </p>
           <div className="mt-10 h-64 w-full rounded-2xl border border-[#001F3F]/10 bg-[#001F3F]/5 flex items-center justify-center text-[#001F3F]/40 font-bold text-xl tracking-widest uppercase shadow-inner">
@@ -150,7 +150,7 @@ export default function CompetitionPage() {
             <h2 className="text-[#001F3F] font-extrabold text-3xl sm:text-4xl tracking-tight">
               Ready to Compete?
             </h2>
-            <p className="text-gray-600 font-light text-lg">
+            <p className=" font-light text-lg">
               Secure your spot in the RoboTrack GP by registering via our official form. Review the fees and inclusions below.
             </p>
             <button
@@ -163,7 +163,7 @@ export default function CompetitionPage() {
 
           <div className="w-full md:w-1/2 bg-white rounded-3xl p-8 shadow-md border border-gray-100">
             <div className="text-[#001F3F] font-extrabold text-xl mb-4">Registration Fees</div>
-            <ul className="text-gray-600 list-disc pl-5 space-y-2 font-medium">
+            <ul className=" list-disc pl-5 space-y-2 font-medium">
               {COMPETITION.fees.map((f) => (
                 <li key={f}>{f}</li>
               ))}

@@ -94,7 +94,7 @@ export default function HomePage() {
             <p className="text-lg text-[#D4AF37] font-bold">
               {HOME.about.makerFair.subtitle}
             </p>
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed font-light">
+            <div className="space-y-4  text-lg leading-relaxed font-light">
               {HOME.about.makerFair.paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -140,7 +140,7 @@ export default function HomePage() {
             <p className="text-lg text-[#D4AF37] font-bold">
               {HOME.about.organizer.subtitle}
             </p>
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed font-light">
+            <div className="space-y-4  text-lg leading-relaxed font-light">
               {HOME.about.organizer.paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -158,7 +158,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 bg-white px-5 py-2.5 rounded-full shadow-sm text-sm font-bold text-[#001F3F]">
               🏆 {HOME.about.organizer.pastExecution.stats?.[0].label}: {HOME.about.organizer.pastExecution.stats?.[0].value}
             </div>
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed font-light text-left md:text-center max-w-4xl mx-auto">
+            <div className="space-y-4  text-lg leading-relaxed font-light text-left md:text-center max-w-4xl mx-auto">
               {HOME.about.organizer.pastExecution.paragraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -187,10 +187,10 @@ export default function HomePage() {
             {/* Contributor Card */}
             <div className="rounded-3xl border border-blue-100 bg-blue-50/30 p-8 sm:p-10 transition hover:shadow-md">
               <h3 className="text-[#001F3F] font-extrabold text-2xl">Contributor Support</h3>
-              <p className="mt-3 text-gray-600 leading-relaxed font-light">
+              <p className="mt-3  leading-relaxed font-light">
                 Non-commercial support for the event. Appreciation-based contribution to foster maker culture.
               </p>
-              <ul className="mt-6 text-gray-600 list-disc pl-5 space-y-2 font-light">
+              <ul className="mt-6  list-disc pl-5 space-y-2 font-light">
                 {HOME.contributor.bullets.map((b) => <li key={b}>{b}</li>)}
               </ul>
               <div className="mt-8 pt-8 border-t border-blue-100">
@@ -210,10 +210,10 @@ export default function HomePage() {
             {/* Sponsor Card */}
             <div className="rounded-3xl border border-amber-100 bg-amber-50/30 p-8 sm:p-10 transition hover:shadow-md">
               <h3 className="text-[#001F3F] font-extrabold text-2xl">Event Sponsorship</h3>
-              <p className="mt-3 text-gray-600 leading-relaxed font-light">
+              <p className="mt-3  leading-relaxed font-light">
                 Commercial partnership opportunities with branding, engagement, and social media exposure.
               </p>
-              <ul className="mt-6 text-gray-600 list-disc pl-5 space-y-2 font-light">
+              <ul className="mt-6  list-disc pl-5 space-y-2 font-light">
                 {HOME.sponsor.bullets.slice(0, 5).map((b) => <li key={b}>{b}</li>)}
               </ul>
               <div className="mt-8 pt-8 border-t border-amber-100/60">

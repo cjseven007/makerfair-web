@@ -31,7 +31,7 @@ export default function Navbar() {
             />
             <div className="hidden sm:flex flex-col">
               <span className="text-[#001F3F] font-extrabold tracking-wide leading-tight">
-                Maker Fair
+                PETROBOTS Maker Fair
               </span>
               <span className="text-[#D4AF37] font-bold text-xs tracking-widest uppercase">
                 2026
