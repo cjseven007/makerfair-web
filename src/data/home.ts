@@ -5,11 +5,11 @@ export const HOME = {
   marketingProposalUrl:
     "https://utpmy-my.sharepoint.com/:b:/g/personal/yen_22011091_utp_edu_my/IQBtt2nVqMGoRpFMeiY8VHjoAYAn2rhi2kgjKn2C2GU9ZYs?e=u7DBLP",
   heroImages: [
-    "/assets/Group-photo-Makerfair25.png",
-    "/assets/IMG_0629.png",
-    "/assets/IMG_3451.png",
-    "/assets/IMG_3546.png",
-    "/assets/IMG_3641.png",
+    "/src/assets/Group-photo-Makerfair25.png",
+    "/src/assets/IMG_0629.png",
+    "/src/assets/IMG_3451.png",
+    "/src/assets/IMG_3546.png",
+    "/src/assets/IMG_3641.png",
   ],
   aboutText:
     "UTP Robotics Society (PETROBOTS) is a well-established robotics society that has been active for a long time at UTP. Originally formed to compete in ROBOCON, it has gradually evolved to serve as a platform for undergraduate robotics advancement for students from diverse backgrounds.",
@@ -53,14 +53,14 @@ export const HOME = {
   footer: {
     address: "Universiti Teknologi PETRONAS (UTP), 32610 Seri Iskandar, Perak, Malaysia",
     note: "This event is organized by UTP PETROBOTS Student Society (UTP PETROBOTS)",
-    logo: "/assets/petrobots logo.png",
+    logo: "/src/assets/petrobots_logo.png",
     socials: [
       {
-        icon: "/assets/icons/instagram.png",
+        icon: "/src/assets/icons/instagram.png",
         url: "https://www.instagram.com/petrobotsmakerfair.utp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
       {
-        icon: "/assets/icons/linkedin.png",
+        icon: "/src/assets/icons/linkedin.png",
         url: "https://www.linkedin.com/company/utp-petrobots/posts/?feedView=all",
       },
     ],
