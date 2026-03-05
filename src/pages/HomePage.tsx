@@ -166,7 +166,7 @@ export default function HomePage() {
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200/50">
             <img 
-              src="/src/assets/Group-photo-Makerfair25.png" 
+              src="./assets/Group-photo-Makerfair25.png" 
               alt="Past Execution Group Photo" 
               className="w-full h-auto object-cover max-h-[500px]"
             />

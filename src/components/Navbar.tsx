@@ -25,7 +25,7 @@ export default function Navbar() {
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 group">
             <img
-              src="/src/assets/PMFnewlogo.png"
+              src="./assets/PMFnewlogo.png"
               alt="PETROBOTS Maker Fair"
               className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />

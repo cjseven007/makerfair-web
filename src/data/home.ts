@@ -7,11 +7,11 @@ export const HOME = {
     "https://utpmy-my.sharepoint.com/:b:/g/personal/yen_22011091_utp_edu_my/IQBtt2nVqMGoRpFMeiY8VHjoAYAn2rhi2kgjKn2C2GU9ZYs?e=u7DBLP",
 
   heroImages: [
-    "/src/assets/Group-photo-Makerfair25.png",
-    "/src/assets/IMG_0629.png",
-    "/src/assets/IMG_3451.png",
-    "/src/assets/IMG_3546.png",
-    "/src/assets/IMG_3641.png",
+    "./assets/Group-photo-Makerfair25.png",
+    "./assets/IMG_0629.png",
+    "./assets/IMG_3451.png",
+    "./assets/IMG_3546.png",
+    "./assets/IMG_3641.png",
   ],
 
   about: {
@@ -19,7 +19,7 @@ export const HOME = {
       title: "About PETROBOTS Maker Fair",
       subtitle:
         "Theme: Engineering Intelligence with Robotics and Automation",
-      logo: "/src/assets/PMFnewlogo.png",
+      logo: "./assets/PMFnewlogo.png",
       paragraphs: [
         "PETROBOTS Maker Fair 2026 is an event under UTP PETROBOTS. This initiative introduces robotics skills and provides a platform for UTP students to engage with companies specializing in engineering fields such as artificial intelligence, robotics, and drones through exhibitions and workshops.",
         "In conjunction with the fair, UTP PETROBOTS will host an international-level robotics competition at Chancellor Hall, Universiti Teknologi PETRONAS (UTP). The competition spans two days — Day 1 for testing, and Day 2 for groupings, knockout stages, and finals.",
@@ -43,7 +43,7 @@ export const HOME = {
     organizer: {
       title: "About the Organizer (PETROBOTS)",
       subtitle: "UTP Robotics Society • Building a maker culture",
-      logo: "/src/assets/petrobots_logo.png",
+      logo: "./assets/petrobots_logo.png",
       paragraphs: [
         "UTP Robotics Society (PETROBOTS) is a well-established robotics society that has been active for a long time at UTP. Originally formed to compete in ROBOCON, it has gradually evolved to serve as a platform for undergraduate robotics advancement for students from diverse backgrounds.",
         "PETROBOTS strives to establish a maker culture within the UTP community — an “urge to create.” The society participates in robotics competitions, research, and event management with the hope of creating success stories both within and outside of UTP.",
@@ -102,14 +102,14 @@ export const HOME = {
       "Universiti Teknologi PETRONAS (UTP), 32610 Seri Iskandar, Perak, Malaysia",
     note:
       "This event is organized by UTP PETROBOTS Student Society (UTP PETROBOTS)",
-    logo: "/src/assets/petrobots_logo.png",
+    logo: "./assets/petrobots_logo.png",
     socials: [
       {
-        icon: "/src/assets/icons/instagram.png",
+        icon: "./assets/icons/instagram.png",
         url: "https://www.instagram.com/petrobotsmakerfair.utp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       },
       {
-        icon: "/src/assets/icons/linkedin.png",
+        icon: "./assets/icons/linkedin.png",
         url: "https://www.linkedin.com/company/utp-petrobots/posts/?feedView=all",
       },
     ],
