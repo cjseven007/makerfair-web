@@ -1,4 +1,3 @@
-import React from "react";
 import { openExternal } from "../utils/url";
 
 export default function Footer({
