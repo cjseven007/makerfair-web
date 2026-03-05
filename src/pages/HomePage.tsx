@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import HighlightCard from "../components/HighlightCard";
 import { HOME } from "../data/home";
 import { mailTo, openExternal } from "../utils/url";
 import { useNavigate } from "react-router-dom";
@@ -90,28 +89,87 @@ export default function HomePage() {
       {/* CONTENT */}
       <main className="mx-auto max-w-6xl px-4 sm:px-6 py-12 space-y-14">
         {/* About */}
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div className="lg:col-span-1">
-            <h2 className="text-[#001F3F] font-extrabold text-3xl">
-              About the Event
-            </h2>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              A celebration of robotics, AI, and maker culture hosted by PETROBOTS at UTP.
-            </p>
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+          {/* About Maker Fair */}
+          <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-6 sm:p-8">
+            <div className="flex items-center gap-4">
+              <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl border border-gray-200 bg-gray-50 flex items-center justify-center overflow-hidden">
+                <img
+                  src={HOME.about.makerFair.logo}
+                  alt="PETROBOTS Maker Fair logo"
+                  className="h-full w-full object-contain p-2"
+                />
+              </div>
+              <div>
+                <h2 className="text-[#001F3F] font-extrabold text-2xl sm:text-3xl">
+                  {HOME.about.makerFair.title}
+                </h2>
+                <p className="mt-1 text-sm text-gray-600">
+                  {HOME.about.makerFair.subtitle}
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-5 space-y-4 text-gray-800 leading-relaxed">
+              {HOME.about.makerFair.paragraphs.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+
+              <div className="rounded-xl bg-gray-50 border border-gray-200 p-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  {HOME.about.makerFair.keyFacts.map((f) => (
+                    <div key={f.label} className={f.label === "Venues" ? "sm:col-span-2" : ""}>
+                      <div className="text-gray-500">{f.label}</div>
+                      <div className="font-semibold text-gray-800">{f.value}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="lg:col-span-2">
-            <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-6">
-              <p className="text-gray-800 leading-relaxed">{HOME.aboutText}</p>
+          {/* About Organizer */}
+          <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-6 sm:p-8">
+            <div className="flex items-center gap-4">
+              <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl border border-gray-200 bg-gray-50 flex items-center justify-center overflow-hidden">
+                <img
+                  src={HOME.about.organizer.logo}
+                  alt="PETROBOTS logo"
+                  className="h-full w-full object-contain p-2"
+                />
+              </div>
+              <div>
+                <h2 className="text-[#001F3F] font-extrabold text-2xl sm:text-3xl">
+                  {HOME.about.organizer.title}
+                </h2>
+                <p className="mt-1 text-sm text-gray-600">
+                  {HOME.about.organizer.subtitle}
+                </p>
+              </div>
+            </div>
 
-              <div className="mt-6 flex flex-wrap gap-4">
-                {HOME.highlights.map((h) => (
-                  <HighlightCard
-                    key={h.title}
-                    title={h.title}
-                    description={h.description}
-                  />
-                ))}
+            <div className="mt-5 space-y-4 text-gray-800 leading-relaxed">
+              {HOME.about.organizer.paragraphs.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+
+              <div className="rounded-xl border border-[#001F3F]/10 bg-[#001F3F]/5 p-4">
+                <div className="flex items-start justify-between gap-3 flex-wrap">
+                  <div>
+                    <div className="text-[#001F3F] font-extrabold">
+                      {HOME.about.organizer.pastExecution.title}
+                    </div>
+                    <div className="mt-1 text-xs text-gray-600">
+                      {HOME.about.organizer.pastExecution.stats?.map((s) => `${s.label}: ${s.value}`).join(" • ")}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-3 space-y-3 text-sm text-gray-700 leading-relaxed">
+                  {HOME.about.organizer.pastExecution.paragraphs.map((p) => (
+                    <p key={p}>{p}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
