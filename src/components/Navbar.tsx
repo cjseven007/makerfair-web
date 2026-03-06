@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { scrollToTop } from "../utils/scroll";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="h-20 flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-3 group">
+          <NavLink to="/" onClick={scrollToTop} className="flex items-center gap-3 group">
             <img
               src="./assets/PMFnewlogo.png"
               alt="PETROBOTS Maker Fair"
@@ -41,10 +42,10 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-2">
-            <NavLink to="/" end className={getLinkClass}>
+            <NavLink to="/" end onClick={scrollToTop} className={getLinkClass}>
               Home
             </NavLink>
-            <NavLink to="/competition" className={getLinkClass}>
+            <NavLink to="/competition" onClick={scrollToTop} className={getLinkClass}>
               Competition
             </NavLink>
           </nav>
@@ -63,10 +64,10 @@ export default function Navbar() {
         {open && (
           <nav className="md:hidden pb-6 pt-2 border-t border-gray-100 animate-in slide-in-from-top-2 fade-in">
             <div className="flex flex-col gap-2">
-              <NavLink to="/" end onClick={() => setOpen(false)} className={getMobileLinkClass}>
+              <NavLink to="/" end onClick={() =>  { scrollToTop();setOpen(false);}} className={getMobileLinkClass}>
                 Home
               </NavLink>
-              <NavLink to="/competition" onClick={() => setOpen(false)} className={getMobileLinkClass}>
+              <NavLink to="/competition" onClick={() => { scrollToTop(); setOpen(false); }} className={getMobileLinkClass}>
                 Competition
               </NavLink>
             </div>
