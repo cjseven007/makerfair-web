@@ -1,5 +1,4 @@
 import { HOME } from "../data/home";
-import { openExternal } from "../utils/url";
 
 interface Sponsor {
   name: string;
@@ -27,13 +26,13 @@ export default function Sponsors() {
   const { tiers, title, subtitle, note } = HOME.sponsors as SponsorsData;
 
   return (
-    <section className="py-16 bg-white border-t border-gray-100">
+    <section className="py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 text-center">
         <h2 className="text-[#001F3F] font-extrabold text-3xl sm:text-4xl">
           {title}
         </h2>
         {subtitle && (
-          <p className="mt-3 text-gray-500 font-light max-w-2xl mx-auto">
+          <p className="mt-3 font-light max-w-2xl mx-auto">
             {subtitle}
           </p>
         )}
@@ -128,8 +127,8 @@ export default function Sponsors() {
           </div>
         )}
 
-        {/* Optional CTA if slots are open */}
-        <div className="mt-12 pt-8 border-t border-gray-100">
+        {/* Optional CTA if slots are open
+        <div className="mt-12 pt-8">
           <p className="text-gray-600 font-light mb-4">
             Interested in partnering with PETROBOTS Maker Fair 2026?
           </p>
@@ -139,7 +138,7 @@ export default function Sponsors() {
           >
             Download Marketing Proposal
           </button>
-        </div>
+        </div> */}
 
         {note && (
           <p className="mt-10 text-xs text-gray-400 font-light">{note}</p>
