@@ -1,73 +1,153 @@
-# React + TypeScript + Vite
+# **Project Setup Guide**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 1. Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before starting, make sure the following software is installed:
 
-## React Compiler
+- Node.js
+- Git
+  To check installaton:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+node -v
+npm -v
+git --version
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 2. Clone the Repository
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+First, clone the project to your local machine.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/cjseven007/makerfair-web.git
 ```
+
+Move into the project folder:
+
+```bash
+cd makerfair-web
+```
+
+## 3. Install Dependencies
+
+Install all required packages:
+
+```bash
+npm install
+```
+
+This installs all libraries defined in `package.json`.
+
+## 4. Run the Development Server
+
+Start the React development server:
+
+```bash
+npm run dev
+```
+
+After running, you should see something like:
+
+```
+Local: http://localhost:5173
+```
+
+Open that URL in your browser to view the application.
+
+## 5. Git Workflow (Basic Contribution Guide)
+
+### Step 1: Pull the latest changes
+
+Always update your local repository first.
+
+```bash
+git pull origin main
+```
+
+### Step 2: Create a new branch
+
+Never work directly on `main`. Create your own branch.
+
+Example:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+Example:
+
+```bash
+feature/login-page
+feature/navbar-ui
+fix/button-bug
+```
+
+### Step 3: Make your changes
+
+Edit the code and test it locally using:
+
+```bash
+npm run dev
+```
+
+### Step 4: Check modified files
+
+```bash
+git status
+```
+
+### Step 5: Add your changes
+
+```bash
+git add .
+```
+
+### Step 6: Commit your changes
+
+```bash
+git commit -m "Add login page UI"
+```
+
+Use clear commit messages.
+
+Examples:
+
+```
+Add navbar component
+Fix button alignment
+Update homepage layout
+```
+
+### Step 7: Push your branch
+
+Push your branch to GitHub:
+
+```bash
+git push origin feature/your-feature-name
+```
+
+or (if not the first time pushing this branch)
+
+```bash
+git push
+```
+
+Example:
+
+```bash
+git push origin feature/login-page
+```
+
+### Step 8: Create a Pull Request (PR)
+
+After pushing:
+
+1. Go to the GitHub repository
+2. You will see a button "Compare & Pull Request"
+3. Click it
+4. Add a short description of your changes
+5. Submit the Pull Request
+
+A maintainer will review it before merging into `main`.
