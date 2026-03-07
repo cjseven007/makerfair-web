@@ -63,7 +63,12 @@ export const HOME = {
     role: "ASSISTANT HEAD OF SPONSORSHIP DEPARTMENT",
     name: "Muhammad Danish Abqari bin Syafiq Jasrin",
     email: "muhammad_24006039@utp.edu.my",
-    bullets: ["Eligible for Tax Exemption", "Post-event impact report"],
+    bullets: ["Eligible for Tax Exemption",
+              "Post-event impact report",
+              "Not Eligible for Logo placement on event materials",
+              "Not eligible to register for exhibition booths",
+              "No Social Media Exposure"
+            ],
   },
 
   sponsor: {
@@ -74,8 +79,8 @@ export const HOME = {
       "Logo placement on event materials",
       "Not Eligible for Tax Exemption",
       "Companies are eligible to register for exhibition booths",
-      "Social media exposure",
       "Opening & closing ceremony mention",
+      "Post-event impact report",
     ],
   },
 
@@ -96,6 +101,25 @@ export const HOME = {
       email: "geoffrey_24006190@utp.edu.my",
     },
   ],
+  sponsors: {
+    title: "Our Valued Partners",
+    subtitle: "Organizations empowering innovation in robotics and automation",
+    tiers: {
+      platinum: [
+        { name: "MURATA ELECTRONICS", 
+        logo: "./assets/sponsors/Platinum/Murata.png", 
+        url: "https://www.murata.com/en-us/",
+        },
+      ],
+      gold: [
+        // { name: "Company Name", logo: "./assets/sponsors/gold/company.svg", url: "https://..." },
+      ],
+      silver: [
+        // { name: "Company Name", logo: "./assets/sponsors/silver/company.svg", url: "https://..." },
+      ],
+    },
+    note: "Logos displayed with permission. All rights reserved to respective owners.",
+  },
 
   footer: {
     address:

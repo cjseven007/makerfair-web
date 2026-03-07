@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { HOME } from "../data/home";
 import { mailTo, openExternal } from "../utils/url";
 import { useNavigate } from "react-router-dom";
+import Sponsors from "../components/Sponsors";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -174,6 +175,7 @@ export default function HomePage() {
         </section>
 
         {/* 5. Support */}
+        <Sponsors />
         <section>
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-[#001F3F] font-extrabold text-3xl sm:text-4xl tracking-tight">
@@ -184,6 +186,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
             {/* Contributor Card */}
             <div className="rounded-3xl border border-blue-100 bg-blue-50/30 p-8 sm:p-10 transition hover:shadow-md">
               <h3 className="text-[#001F3F] font-extrabold text-2xl">Contributor Support</h3>
@@ -196,15 +199,15 @@ export default function HomePage() {
               <div className="mt-8 pt-8 border-t border-blue-100">
                 <div className="text-xs font-bold tracking-widest text-gray-400 uppercase">{HOME.contributor.role}</div>
                 <div className="mt-1 text-lg font-bold text-[#001F3F]">{HOME.contributor.name}</div>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <button onClick={() => openExternal(HOME.marketingProposalUrl)} className="rounded-full bg-[#001F3F] text-white font-semibold px-6 py-3 hover:opacity-90 transition">
-                    View Proposal
-                  </button>
-                  <button onClick={() => mailTo(HOME.contributor.email)} className="rounded-full bg-white text-[#001F3F] font-semibold px-6 py-3 hover:bg-gray-50 transition border border-gray-200">
-                    Email
+                <div className="mt-6">
+                  <button 
+                    onClick={() => mailTo(HOME.contributor.email)} 
+                    className="rounded-full bg-white text-[#001F3F] font-semibold px-6 py-3 hover:bg-gray-50 transition border border-gray-200"
+                  >
+                    Email {HOME.contributor.name.split(' ')[0]}
                   </button>
                 </div>
-              </div>
+              </div>              
             </div>
 
             {/* Sponsor Card */}
@@ -219,12 +222,12 @@ export default function HomePage() {
               <div className="mt-8 pt-8 border-t border-amber-100/60">
                 <div className="text-xs font-bold tracking-widest text-gray-400 uppercase">{HOME.sponsor.role}</div>
                 <div className="mt-1 text-lg font-bold text-[#001F3F]">{HOME.sponsor.name}</div>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <button onClick={() => openExternal(HOME.marketingProposalUrl)} className="rounded-full bg-[#001F3F] text-white font-semibold px-6 py-3 hover:opacity-90 transition">
-                    View Proposal
-                  </button>
-                  <button onClick={() => mailTo(HOME.sponsor.email)} className="rounded-full bg-white text-[#001F3F] font-semibold px-6 py-3 hover:bg-gray-50 transition border border-gray-200">
-                    Email
+                <div className="mt-6">
+                  <button 
+                    onClick={() => mailTo(HOME.sponsor.email)} 
+                    className="rounded-full bg-white text-[#001F3F] font-semibold px-6 py-3 hover:bg-gray-50 transition border border-gray-200"
+                  >
+                    Email {HOME.sponsor.name.split(' ')[0]}
                   </button>
                 </div>
               </div>
@@ -233,6 +236,10 @@ export default function HomePage() {
           <p className="mt-8 text-center text-sm font-light text-gray-400 max-w-2xl mx-auto">
             Contributor support does not include branding, publicity, or commercial benefits and follows UTP financial governance policy.
           </p>
+          <p className="mt-4 text-center text-sm text-[#D4AF37] font-medium">
+            Sponsorship proposals & partnership details available in the Partners section above.
+          </p>
+          
         </section>
 
         {/* 6. Contact */}
