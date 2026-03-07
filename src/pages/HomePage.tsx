@@ -179,11 +179,17 @@ export default function HomePage() {
         <section>
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-[#001F3F] font-extrabold text-3xl sm:text-4xl tracking-tight">
-              Support the Event
+              Interested in partnering with PETROBOTS Maker Fair 2026?
             </h2>
-            <p className="mt-4 text-lg text-gray-500 font-light">
+            <p className="mt-4 text-lg font-light">
               Choose a support path that fits you — contributor or sponsor.
             </p>
+            <button
+                onClick={() => openExternal(HOME.marketingProposalUrl)}
+                className="mt-4 rounded-full bg-[#001F3F] text-white font-semibold px-6 py-3 hover:opacity-90 transition"
+              >
+                Download Marketing Proposal
+            </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
