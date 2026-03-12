@@ -67,8 +67,12 @@ export default function CompetitionPage() {
           <p className="mt-4  text-lg sm:text-xl font-light max-w-3xl mx-auto leading-relaxed">
             {COMPETITION.intro}
           </p>
-          <div className="mt-10 h-64 w-full rounded-2xl border border-[#001F3F]/10 bg-[#001F3F]/5 flex items-center justify-center text-[#001F3F]/40 font-bold text-xl tracking-widest uppercase shadow-inner">
-            RoboTrack GP Banner Placement
+          <div className="mt-10 w-full rounded-2xl overflow-hidden shadow-lg relative">
+            <img
+              src="/assets/RoboTrackGPposter.png"
+              alt="RoboTrack GP Banner"
+              className="w-full h-auto"
+            />
           </div>
         </section>
 

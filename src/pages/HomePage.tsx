@@ -188,7 +188,7 @@ export default function HomePage() {
                 onClick={() => openExternal(HOME.marketingProposalUrl)}
                 className="mt-4 rounded-full bg-[#001F3F] text-white font-semibold px-6 py-3 hover:opacity-90 transition"
               >
-                Download Marketing Proposal
+                View Marketing Proposal
             </button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -202,7 +202,7 @@ export default function HomePage() {
               <ul className="mt-6  list-disc pl-5 space-y-2 font-light">
                 {HOME.contributor.bullets.map((b) => <li key={b}>{b}</li>)}
               </ul>
-              <div className="mt-8 pt-8 border-t border-blue-100">
+              <div className="mt-8 pt-8 border-t border-blue-300">
                 <div className="text-xs font-bold tracking-widest text-gray-400 uppercase">{HOME.contributor.role}</div>
                 <div className="mt-1 text-lg font-bold text-[#001F3F]">{HOME.contributor.name}</div>
                 <div className="mt-6">
@@ -225,7 +225,7 @@ export default function HomePage() {
               <ul className="mt-6  list-disc pl-5 space-y-2 font-light">
                 {HOME.sponsor.bullets.slice(0, 5).map((b) => <li key={b}>{b}</li>)}
               </ul>
-              <div className="mt-8 pt-8 border-t border-amber-100/60">
+              <div className="mt-8 pt-8 border-t border-amber-300">
                 <div className="text-xs font-bold tracking-widest text-gray-400 uppercase">{HOME.sponsor.role}</div>
                 <div className="mt-1 text-lg font-bold text-[#001F3F]">{HOME.sponsor.name}</div>
                 <div className="mt-6">
