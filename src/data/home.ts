@@ -106,16 +106,23 @@ export const HOME = {
     subtitle: "Organizations empowering innovation in robotics and automation",
     tiers: {
       platinum: [
-        { name: "MURATA ELECTRONICS", 
-        logo: "./assets/sponsors/Platinum/Murata.png", 
-        url: "https://www.murata.com/en-us/",
+        { name: "RUTS", 
+        logo: "./assets/sponsors/Platinum/ruts.png", 
+        url: "https://www.rmutsv.ac.th/ruts/en/home/",
         },
       ],
       gold: [
-        // { name: "Company Name", logo: "./assets/sponsors/gold/company.svg", url: "https://..." },
+        { name: "PETROBOTS",
+          logo: "./assets/PMFnewlogo.png",
+          url: "#",
+        }
+        
       ],
       silver: [
-        // { name: "Company Name", logo: "./assets/sponsors/silver/company.svg", url: "https://..." },
+        { name: "PETROBOTS",
+          logo: "./assets/PMFnewlogo.png",
+          url: "#",
+        }
       ],
     },
     note: "Logos displayed with permission. All rights reserved to respective owners.",
