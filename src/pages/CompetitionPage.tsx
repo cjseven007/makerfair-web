@@ -134,10 +134,10 @@ export default function CompetitionPage() {
                   </div>
 
                   <button
-                    onClick={() => openExternal(COMPETITION.participantsBookletUrl)}
+                    onClick={() => window.open(COMPETITION.participantsBookletUrl, '_blank')}
                     className="w-full rounded-full bg-[#001F3F] text-white font-bold px-6 py-4 hover:bg-[#003366] transition shadow-md"
                   >
-                    View Participants Booklet
+                    View Competition Booklet
                   </button>
                 </div>
               );

@@ -3,9 +3,7 @@ export const HOME = {
   tagline: "Engineering Intelligence with Robotics and Automation",
   dateVenue: "27th-28th June 2026 | Universiti Teknologi PETRONAS (UTP)",
 
-  marketingProposalUrl:
-    "https://utpmy-my.sharepoint.com/:b:/g/personal/yen_22011091_utp_edu_my/IQBtt2nVqMGoRpFMeiY8VHjoAYAn2rhi2kgjKn2C2GU9ZYs?e=u7DBLP",
-
+  marketingProposalUrl: "/Documents/PMF26 MARKETING PROPOSAL.pdf",
   heroImages: [
     "./assets/Group-photo-Makerfair25.png",
     "./assets/IMG_0629.png",
@@ -110,19 +108,6 @@ export const HOME = {
         logo: "./assets/sponsors/Platinum/ruts.png", 
         url: "https://www.rmutsv.ac.th/ruts/en/home/",
         },
-      ],
-      gold: [
-        { name: "PETROBOTS",
-          logo: "./assets/PMFnewlogo.png",
-          url: "#",
-        }
-        
-      ],
-      silver: [
-        { name: "PETROBOTS",
-          logo: "./assets/PMFnewlogo.png",
-          url: "#",
-        }
       ],
     },
     note: "Logos displayed with permission. All rights reserved to respective owners.",

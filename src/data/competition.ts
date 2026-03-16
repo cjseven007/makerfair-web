@@ -2,8 +2,7 @@ export const COMPETITION = {
   title: "PETROBOTS RoboTrack GP 2026",
   intro:
     "Welcome to the ultimate robotics competition! Showcase your innovation, engineering skills, and creativity on the global stage.",
-  participantsBookletUrl:
-    "https://utpmy-my.sharepoint.com/:b:/g/personal/yen_22011091_utp_edu_my/IQBa8CduXTzaTYgKXSl2mRgZAakFU2RClmymFzcrE0n4brY?e=VCmp4Z",
+  participantsBookletUrl:"/Documents/PMF26 COMPETITION BOOKLET.pdf",
   registrationFormUrl: "https://forms.office.com/r/YrcvZ61nTff",
   categories: [
     {
