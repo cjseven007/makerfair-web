@@ -2,8 +2,9 @@ export const COMPETITION = {
   title: "PETROBOTS RoboTrack GP 2026",
   intro:
     "Welcome to the ultimate robotics competition! Showcase your innovation, engineering skills, and creativity on the global stage.",
-  participantsBookletUrl:
-    "https://utpmy-my.sharepoint.com/:b:/g/personal/yen_22011091_utp_edu_my/IQBa8CduXTzaTYgKXSl2mRgZAakFU2RClmymFzcrE0n4brY?e=VCmp4Z",
+  participantsBookletUrl:"/Documents/PMF26 COMPETITION BOOKLET.pdf",
+  ExpertCategoryMapUrl:"./assets/Map/Expert (Half) map.pdf",
+  GrandmasterCategoryMapUrl:"./assets/Map/Grandmaster map.pdf",
   registrationFormUrl: "https://forms.office.com/r/YrcvZ61nTff",
   categories: [
     {
@@ -11,6 +12,7 @@ export const COMPETITION = {
       subtitle: "Elementary School / Secondary School",
       borderClass: "border-slate-500",
       titleClass: "text-slate-600",
+      mapUrl: "./assets/Map/Expert (Half) map.pdf",
       descriptionLines: [
         "LEGO or Arduino (8-bit Atmel) platforms",
         "Maximum 2 motors for locomotion",
@@ -26,6 +28,7 @@ export const COMPETITION = {
       subtitle: "University / Open Level (Professionals Welcome)",
       borderClass: "border-[#001F3F]",
       titleClass: "text-[#001F3F]",
+      mapUrl: "./assets/Map/Grandmaster map.pdf",
       descriptionLines: [
         "Any microcontroller (ESP32, STM32, Raspberry Pi, etc.)",
         "No limit on motors or sensors",
@@ -38,7 +41,7 @@ export const COMPETITION = {
     },
   ],
   note:
-    "Note: All robots must undergo mandatory technical inspection 30 minutes before the tournament. Wireless modules (Bluetooth/Wi-Fi) must be disabled during official runs.",
+    "Rules and regulations are subject to change at the discretion of the PETROBOTS Maker Fair 2026 Organizing Committee. All participants agree to abide by updates communicated via official channels. The Committee reserves the right to make final decisions on all matters related to the competition, and their rulings are binding.",
   fees: [
     "Expert: RM200 (Local) / $100 (International)",
     "Grandmaster: RM300 (Local) / $150 (International)",
@@ -47,7 +50,7 @@ export const COMPETITION = {
   faq: [
     {
       q: "When is the competition?",
-      a: "PETROBOTS Maker Fair 2026 will be held on 27th-28th June 2026 at Universiti Teknologi PETRONAS (UTP).",
+      a: "PETROBOTS Maker Fair 2026 will be held on 3rd-4th October 2026 at Universiti Teknologi PETRONAS (UTP).",
     },
     {
       q: "What are the team size limits?",
