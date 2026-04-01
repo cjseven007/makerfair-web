@@ -1,7 +1,7 @@
 export const HOME = {
   title: "PETROBOTS Maker Fair 2026",
   tagline: "Engineering Intelligence with Robotics and Automation",
-  dateVenue: "27th-28th June 2026 | Universiti Teknologi PETRONAS (UTP)",
+  dateVenue: "3rd-4th October 2026 | Universiti Teknologi PETRONAS (UTP)",
 
   marketingProposalUrl: "/Documents/PMF26 MARKETING PROPOSAL.pdf",
   heroImages: [
@@ -23,7 +23,7 @@ export const HOME = {
         "In conjunction with the fair, UTP PETROBOTS will host an international-level robotics competition at Chancellor Hall, Universiti Teknologi PETRONAS (UTP). The competition spans two days — Day 1 for testing, and Day 2 for groupings, knockout stages, and finals.",
       ],
       keyFacts: [
-        { label: "Dates", value: "27–28 June 2026 (Saturday–Sunday)" },
+        { label: "Dates", value: "3rd-4th October 2026 (Saturday–Sunday)" },
         { label: "Expected Participants", value: "500–700" },
         {
           label: "Venues",
